@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include "Plez_Server.h"
-#include <boost/thread.hpp>
 
 using namespace std;
 
@@ -23,7 +22,7 @@ int main(int argc, char* argv[])
     if (tolower(userInput) == 's')
     {
         Plez_Server server;
-        //boost::thread t(server.start_listening);
+        server.start(32401);
     }
 
     return 0;

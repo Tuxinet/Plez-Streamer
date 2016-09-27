@@ -11,7 +11,8 @@ public:
     Plez_Server();
     ~Plez_Server();
 
-    static void start_listening(int port);
+    void set_directory(char* dir);
+    void start(int port);
 
 private:
 
