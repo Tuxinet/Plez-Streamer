@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.5)
 project (Plez_Streamer)
-add_executable(Plez_Streamer main.cpp)
+add_executable(Plez_Streamer main.cpp Plez_Server.cpp Plez_Server.h)
 
 find_package(Boost COMPONENTS system)
 
