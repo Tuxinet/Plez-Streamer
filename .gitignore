@@ -4,6 +4,13 @@
 *.o
 *.obj
 
+# CMake
+CMakeFiles
+Plez_Streamer
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
 # Precompiled Headers
 *.gch
 *.pch
