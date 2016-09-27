@@ -11,6 +11,9 @@ CMakeCache.txt
 cmake_install.cmake
 Makefile
 
+# CLion specific stuff
+workspace.xml
+
 # Precompiled Headers
 *.gch
 *.pch
