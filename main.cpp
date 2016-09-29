@@ -4,8 +4,12 @@
 
 #include <iostream>
 #include "Plez_Server.h"
+#include "Plez_Client.h"
+#include <cstdio>
 
 using namespace std;
+
+const int PORT = 32401;
 
 int main(int argc, char* argv[])
 {
@@ -22,7 +26,13 @@ int main(int argc, char* argv[])
     if (tolower(userInput) == 's')
     {
         Plez_Server server;
-        server.start(32401);
+        server.start(PORT);
+    }
+
+    if (tolower(userInput) == 'c')
+    {
+        boost::asio::io_service svc;
+        Plez_Client client(svc, "127.0.0.1", "32401");
     }
 
     return 0;
